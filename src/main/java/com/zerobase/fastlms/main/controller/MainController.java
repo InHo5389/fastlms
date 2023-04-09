@@ -20,6 +20,12 @@ public class MainController {
 //        mailComponents.sendMail(email,subject,text);
         return "index";
     }
+    @RequestMapping("/error/denied")
+    public String errorDenied(){
+
+
+        return "/error/denied";
+    }
 
 
 

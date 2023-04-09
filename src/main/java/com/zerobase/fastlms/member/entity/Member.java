@@ -30,4 +30,8 @@ public class Member {
 
     private String resetPasswordKey;
     private LocalDateTime resetPasswordLimitDt;
+
+    // 관리자여부를 지정할거냐?
+    // 회원에 따른 ROLE을 지정할거냐??
+    private boolean adminYn;
 }
