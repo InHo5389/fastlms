@@ -14,14 +14,13 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Member {
+public class Member implements MemberCode{
 
     @Id
     private String userId;
-
     private String userName;
-    private String password;
     private String phone;
+    private String password;
     private LocalDateTime regDt;
 
     private boolean emailAuthYn;
@@ -34,4 +33,6 @@ public class Member {
     // 관리자여부를 지정할거냐?
     // 회원에 따른 ROLE을 지정할거냐??
     private boolean adminYn;
+
+    private String userStatus; //이용 가능한상태,정지상태
 }

@@ -11,6 +11,8 @@ public class MemberParam {
     String searchType;
     String searchValue;
 
+    String userId;
+
     public long getPageStart(){
         init();
         return (pageIndex -1) * pageSize;
@@ -31,7 +33,7 @@ public class MemberParam {
         }
     }
 
-    public String getQuertString() {
+    public String getQueryString() {
         init();
 
         StringBuilder sb = new StringBuilder();
